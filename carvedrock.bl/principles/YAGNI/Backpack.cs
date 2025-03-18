@@ -24,49 +24,11 @@ namespace carvedrock.bl.principles.YAGNI
             IsWaterproof = isWaterproof;
         }
 
-        public Backpack() { } // Required for Xml Serialization
-
         public string ToJson()
         {
             return JsonSerializer.Serialize(this);
         }
 
-        public string ToXml()
-        {
-            /*
-            XmlSerializer serializer = new (this.GetType());
-            using StringWriter textWriter = new();
-            serializer.Serialize(textWriter, this);
-            return textWriter.ToString();
-            */
-            throw new NotImplementedException();
-        }
-        public string ToCsv(bool returnHeader = false)
-        {
-            /*
-            string header = "Name,Price,Capacity,Weight,IsWaterproof\n";
-
-            string values = $"\"{Name}\",{Price},{Capacity},{Weight},{(IsWaterproof ? 1 : 0)}\n";
-
-            if (returnHeader)
-                return header + values;
-            return values;
-            */
-            throw new NotImplementedException();
-        }
-
-        public string ToTsv(bool returnHeader = false)
-        {
-            /*
-            string header = "Name\tPrice\tCapacity\tWeight\tIsWaterproof\n";
-
-            string values = $"\"{Name}\"\t{Price}\t{Capacity}\t{Weight}\t{(IsWaterproof ? 1 : 0)}\n";
-
-            if (returnHeader)
-                return header + values;
-            return values;
-            */
-            throw new NotImplementedException();
-        }
+       
     }
 }

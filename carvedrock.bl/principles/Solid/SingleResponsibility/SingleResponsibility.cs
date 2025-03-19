@@ -15,10 +15,6 @@ namespace carvedrock.bl.principles.Solid
 			return 2 * 3.1415 * Radius;
 		}
 
-		public void PlotCircleOnCanvas(Canvas canvas)
-		{
-			// This does not belong here!
-		}
     }
 }
 

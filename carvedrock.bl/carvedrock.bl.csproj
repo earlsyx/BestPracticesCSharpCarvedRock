@@ -11,7 +11,4 @@
     <None Remove="principles\Solid\" />
     <None Remove="principles\Solid\SingleResponsibility\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="principles\Solid\SingleResponsibility\" />
-  </ItemGroup>
 </Project>

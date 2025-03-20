@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace carvedrock.bl.principles.Solid.InterfaceSegregation
 {
-    public class ColdBrewCoffeeMaker : ICoffeeMachine
+    public class ColdBrewCoffeeMaker : IColdCoffeeMachine
     {
         private int _coffeeBeans; 
         private int _water;
@@ -28,9 +28,5 @@ namespace carvedrock.bl.principles.Solid.InterfaceSegregation
             Console.WriteLine("Making Cold Brew");
         }
 
-        public void GetExpressoCoffee()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

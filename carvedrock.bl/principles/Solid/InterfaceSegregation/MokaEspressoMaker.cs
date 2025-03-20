@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace carvedrock.bl.principles.Solid.InterfaceSegregation
 {
-    public class MokaEspressoMaker : ICoffeeMachine
+    public class MokaEspressoMaker : IExpressoMachine
     {
         private double _coffeeBeans;
         private double _water;
@@ -21,13 +21,7 @@ namespace carvedrock.bl.principles.Solid.InterfaceSegregation
         {
             // Adds 500 mL of water
             _water += 0.5;
-        }
-
-        public void GetColdCoffee()
-        {
-            throw new NotImplementedException();
-        }
-
+        }    
         public void GetExpressoCoffee()
         {
             Console.WriteLine("Making Expresso Coffee");
